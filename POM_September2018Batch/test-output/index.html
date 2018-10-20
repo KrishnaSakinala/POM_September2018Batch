@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,24 +102,15 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.PlaceOrderTest" hash-for-method="placeOrderByCOD">placeOrderByCOD</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.PlaceOrderTest" hash-for-method="placeOrderUsingNB">placeOrderUsingNB</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.PlaceOrderTest" hash-for-method="placeOrderByCOD">placeOrderByCOD</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -139,38 +130,44 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="placeOrderByCOD">
+                  </a> <!-- placeOrderByCOD -->
+                  <span class="method-name">placeOrderByCOD</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/TestData.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at repo.ExcelApiTest.&lt;init&gt;(ExcelApiTest.java:28)
+	at basetest.BaseTest.init(BaseTest.java:44)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test script tests the placing order using COD.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="placeOrderUsingNB">
                   </a> <!-- placeOrderUsingNB -->
                   <span class="method-name">placeOrderUsingNB</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping this test case as run mode is not Y
-	at testcases.PlaceOrderTest.placeOrderUsingNB(PlaceOrderTest.java:48)
-... Removed 25 stack frames
+                  <div class="stack-trace">java.io.FileNotFoundException: Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/TestData.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at repo.ExcelApiTest.&lt;init&gt;(ExcelApiTest.java:28)
+	at basetest.BaseTest.init(BaseTest.java:44)
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.PlaceOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="placeOrderByCOD">
-                  </a> <!-- placeOrderByCOD -->
-                  <span class="method-name">placeOrderByCOD</span>
-                  <em>
-(This test script tests the placing order using COD.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/krishnasakinala/eclipse-workspace/POM_September2018Batch/testng.xml</span>
+            <span class="header-content">/Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,16 +220,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'placeOrderByCOD')
 data.setCell(0, 2, 'testcases.PlaceOrderTest')
-data.setCell(0, 3, 27667);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'placeOrderUsingNB')
 data.setCell(1, 2, 'testcases.PlaceOrderTest')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,29 +257,19 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">placeOrderByCOD</span>
-                <span class="method-start">13428 ms</span>
+                <span class="method-start">-1539997111684 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=placeOrderByCOD status=SUCCESS method=PlaceOrderTest.placeOrderByCOD()[pri:0, insta...)</span>
-                <span class="method-start">41100 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">placeOrderUsingNB</span>
-                <span class="method-start">41109 ms</span>
+                <span class="method-start">-1539997111684 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=placeOrderUsingNB status=SKIP method=PlaceOrderTest.placeOrderUsingNB()[pri:0, inst...)</span>
-                <span class="method-start">41114 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">41428 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -41,20 +41,19 @@ public class BaseTest {
 	@BeforeSuite
 	public void init() throws Exception
 	{
-		eat = new ExcelApiTest("/Users/krishnasakinala/eclipse-workspace/POM_September2018Batch/src/main/resources/TestData.xlsx");
+		eat = new ExcelApiTest("/Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/TestData.xlsx");
 		
-		fis = new FileInputStream("/Users/krishnasakinala/eclipse-workspace/POM_September2018Batch/src/main/resources/config.properties");
+		fis = new FileInputStream("/Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/config.properties");
 		
 		config = new Properties();
 		config.load(fis);
 		
 		if(extentReports == null)
 		{
-			extentHtmlReporter = new ExtentHtmlReporter("/Users/krishnasakinala/eclipse-workspace/POM_September2018Batch/src/main/resources/ATReport.html");
+			extentHtmlReporter = new ExtentHtmlReporter("/Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/ATReport.html");
 			extentReports = new ExtentReports();
 			extentReports.attachReporter(extentHtmlReporter);
-			
-			
+						
 			extentReports.setSystemInfo("OS", "Mac OS");
 			extentReports.setSystemInfo("Environment", "QA");
 			extentReports.setSystemInfo("UserName", "Krishna Sakinala");
@@ -94,7 +93,7 @@ public class BaseTest {
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String dest = "/Users/krishnasakinala/eclipse-workspace/POM_September2018Batch/src/main/resources/screenshots/"+screenshotName+".png";
+		String dest = "/Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/screenshots/"+screenshotName+".png";
 		File destination = new File(dest);
 		FileHandler.copy(source, destination);
 		

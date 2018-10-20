@@ -49,24 +49,4 @@ public class PlaceOrderTest extends BaseTest
 		}
 	}
 	
-	@Test
-	public void placeOrderUsingPayapl()
-	{
-		extentTest = extentReports.createTest("placeOrderUsingNB");
-		
-		if(DataUtil.isTestExecutable(eat, "TestCases", "placeOrderUsingNB"))
-		{
-			HomePage homePage = new HomePage(driver, extentTest);
-			SearchResultsPage searchResultsPage = homePage.searchBook();
-			ProductDisplayPage productDisplayPage = searchResultsPage.clickSearchedBook();
-			BasketPage basketPage = productDisplayPage.navigateToBasketPage();
-			CheckoutPage checkoutPage = basketPage.proceedToCheckout();
-			checkoutPage.placeOrderByNB();
-		}
-		else
-		{
-			throw new SkipException("Skipping this test case as run mode is not Y");
-		}
-	}
-
 }

@@ -6,6 +6,7 @@
       <class name="testcases.PlaceOrderTest">
         <methods>
           <include name="tearDown"/>
+          <include name="placeOrderByCOD"/>
           <include name="getResult"/>
           <include name="init"/>
           <include name="placeOrderUsingNB"/>

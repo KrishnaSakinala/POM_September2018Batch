@@ -9,11 +9,20 @@
            
            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <compilerVersion>1.8</compilerVersion>
+                </configuration>
+            </plugin>
+           
+           <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>/Users/krishnasakinala/eclipse-workspace/POM_September2018Batch/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>/Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

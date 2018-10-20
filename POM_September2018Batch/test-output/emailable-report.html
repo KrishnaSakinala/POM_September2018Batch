@@ -9,13 +9,36 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">27,742</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">67</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcases.PlaceOrderTest</td><td><a href="#m0">placeOrderUsingNB</a></td><td rowspan="1">1539913164784</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.PlaceOrderTest</td><td><a href="#m1">placeOrderByCOD</a></td><td rowspan="1">1539913137103</td><td rowspan="1">27667</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testcases.PlaceOrderTest</td><td><a href="#m0">init</a></td><td rowspan="1">1539997111684</td><td rowspan="1">30</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">testcases.PlaceOrderTest</td><td><a href="#m1">getResult</a></td><td rowspan="2">1539997111774</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m2">getResult</a></td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="1">1539997112079</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">testcases.PlaceOrderTest</td><td><a href="#m4">placeOrderByCOD</a></td><td rowspan="1">1539997111771</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">placeOrderUsingNB</a></td><td rowspan="1">1539997111781</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testcases.PlaceOrderTest#placeOrderUsingNB</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping this test case as run mode is not Y
-	at testcases.PlaceOrderTest.placeOrderUsingNB(PlaceOrderTest.java:48)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.PlaceOrderTest#placeOrderByCOD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testcases.PlaceOrderTest#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/TestData.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at repo.ExcelApiTest.&lt;init&gt;(ExcelApiTest.java:28)
+	at basetest.BaseTest.init(BaseTest.java:44)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.PlaceOrderTest#getResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.PlaceOrderTest#getResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.PlaceOrderTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.PlaceOrderTest#placeOrderByCOD</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/TestData.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at repo.ExcelApiTest.&lt;init&gt;(ExcelApiTest.java:28)
+	at basetest.BaseTest.init(BaseTest.java:44)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.PlaceOrderTest#placeOrderUsingNB</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: Users/krishnasakinala/git/POM_September2018Batch/POM_September2018Batch/src/main/resources/TestData.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at repo.ExcelApiTest.&lt;init&gt;(ExcelApiTest.java:28)
+	at basetest.BaseTest.init(BaseTest.java:44)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
